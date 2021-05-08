@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Download videos from any Social Media site for free using Download It">
+    <meta name="author" content="Muneer">
+    <title>Download It | {% block title %} {% endblock title %}</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/examples/cover/">
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static', filename = '/css/bootstrap.min.css') }}" rel="stylesheet"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <meta name="theme-color" content="#563d7c">
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename = '/cover.css') }}" rel="stylesheet">
+
+    <!-- Logo -->
+    <link rel="shortcut icon" href="static\logo.png" type="image/x-icon">
+
+</head>
+
+<body class="text-center">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="masthead mb-auto">
+            <div class="inner">
+                <h4 class="masthead-brand"><a href="/">Download It</a></h4>
+                <nav class="nav nav-masthead justify-content-center">
+                    <!-- <a class="nav-link active" href="/">Home</a>
+                    <a class="nav-link" href="/about">About</a>
+                    <a class="nav-link" href="/terms-conditions">Terms & Conditions</a> -->
+                    {% block active %} {% endblock active %}
+                </nav>
+            </div>
+        </header>
+
+        {% block body %}
+
+        {% endblock body %}
+        <footer class="mastfoot mt-auto">
+            <div class="inner">
+                <p>Made with &#10084 by <a href="https://github.com/Muneer320/Flask-Download-It"
+                        target="_blank">Muneer</a>.</p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

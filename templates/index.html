@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %} Home{% endblock title %} 
+
+{% block active %} 
+<a class="nav-link active" href="/">Home</a>
+<a class="nav-link" href="/how-to">How-to</a>
+<a class="nav-link" href="/about">About</a>
+<a class="nav-link" href="/terms-conditions">Terms & Conditions</a>
+{% endblock active %}
+
+{% block body %}
+
+        <main role="main" class="inner cover">
+            <h1 class="cover-heading">Download It</h1>
+            <p class="lead">Download Any Video From Anywhere in the Internet</p>
+            <p class="lead">
+                <form action="/download" method="post">
+                    <input type="text" class="form-control" placeholder="Enter video url here" name="url">
+                    <button type="submit" class="btn btn-success mt-3">Download</button>
+                </form>
+            </p>
+        </main>
+{% endblock body %}

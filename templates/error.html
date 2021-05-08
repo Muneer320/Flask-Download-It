@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}Error{% endblock title %}
+
+{% block active %} 
+<a class="nav-link" href="/">Home</a>
+<a class="nav-link" href="/how-to">How-to</a>
+<a class="nav-link" href="/about">About</a>
+<a class="nav-link" href="/terms-conditions">Terms & Conditions</a>
+{% endblock active %}
+
+{% block body %}
+        
+        <h1 class="display-4">Download It</h1>
+        <p class="lead">Error</p>
+
+        <main role="main" class="inner cover">
+            <p>There was a error while Downloading. Possible reasons for this is already stated in <a href="/how-to"><b>How-to</b></a> page.</p>
+            <p>Click <a href="/">here</a> to go back.</p>
+        </main>
+
+{% endblock body %}
