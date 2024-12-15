@@ -1,69 +1,72 @@
 # Download-It
 
-Download-It is a Flask-based web application designed to facilitate the easy and quick download of videos from the internet. Users can simply enter the URL of the video they want to download, and the application will handle the rest, providing the video for download in little to no time.
+Download-It is a web application built using Flask, designed to simplify and accelerate the process of downloading videos from the internet. By simply entering a video URL, users can effortlessly download the video in just a few moments.
 
 ## Sections
 
-- [Home](https://download-it.herokuapp.com/)
-- [How-To](https://download-it.herokuapp.com/How-To)
-- [About](https://download-it.herokuapp.com/About)
-- [Terms And Conditions](https://download-it.herokuapp.com/Terms-And-Conditions)
+- [Home](https://flask-download-it.onrender.com/)
+- [How-To](https://flask-download-it.onrender.com/how-to)
+- [About](https://flask-download-it.onrender.com/about)
+- [Terms and Conditions](https://flask-download-it.onrender.com/terms-conditions)
 
 ## Features
 
-- **Simple Interface**: The application offers a user-friendly interface, making it easy for users to quickly download videos.
-- **Efficient Processing**: Download-It efficiently processes video download requests, ensuring minimal wait times for users.
-- **Versatile Compatibility**: Compatible with a wide range of video hosting platforms, enabling users to download videos from various sources.
+- **User-Friendly Interface**: The application boasts an intuitive interface, making video downloads straightforward for users.
+- **Fast Processing**: Download-It efficiently handles download requests, ensuring minimal delays.
+- **Platform Compatibility**: Supports downloads from a wide range of video hosting platforms.
 
 ## How to Use
 
-1. **Access the Application**: Once the application is running, access it via the provided URL.
-2. **Input Video URL**: Enter the URL of the video you wish to download into the designated input field.
-3. **Initiate Download**: Click the "Download" button to initiate the download process.
-4. **Download Completion**: Upon completion, the application will provide the video for download, ready for offline viewing.
+1. **Launch the Application**: Access the application via the provided URL.
+2. **Enter the Video URL**: Input the URL of the desired video into the designated field.
+3. **Start the Download**: Click the "Download" button to initiate the process.
+4. **Retrieve the Video**: Once completed, the video will be ready for download, available for offline viewing.
 
-For more detailed instructions and troubleshooting tips, refer to the [How-To page](https://download-it.herokuapp.com/How-To) within the application interface.
+For a more detailed guide, visit the [How-To page](https://flask-download-it.onrender.com/how-to).
 
 ## Installation and Setup
 
-To run Download-It locally, follow these steps:
+To run Download-It locally, follow these instructions:
 
-1. **Python Installation**: Ensure Python is installed on your system. If not, download and install it from the official Python website.
-2. **Clone Repository**: Clone the Download-It repository to your local machine using the following command:
-    ```
+1. **Install Python**: Ensure Python is installed. If not, download it from the official website.
+2. **Clone the Repository**: Use the following command to clone the repository:
+    ```bash
     git clone https://github.com/Muneer320/Flask-Download-It.git
     ```
-3. **Navigate to Directory**: Change into the project directory:
-    ```
+3. **Navigate to the Directory**: Move into the project folder:
+    ```bash
     cd Download-It
     ```
-4. **Install Dependencies**: Install the required dependencies using pip:
-    ```
+4. **Install Dependencies**: Install the required Python packages using pip:
+    ```bash
     pip install -r requirements.txt
     ```
-5. **Run the Application**: Start the Flask application:
+5. **Configure Host and Port**: The application is set to be hosted online by default. To run it locally, adjust the host and port as needed. The local configuration is already in the script—simply uncomment the necessary lines.
+
+    **Online Configuration (current)**:
+    ```python
+    app.run(debug=False, host='0.0.0.0')
     ```
+
+    **Local Configuration**:
+    ```python
+    app.run(port=80, debug=True)
+    ```
+
+6. **Run the Application**: Start the Flask app:
+    ```bash
     flask run
     ```
-6. **Access the Application**: Open a web browser and navigate to http://127.0.0.1:5000 to access the application locally.
+7. **Access Locally**: Open a web browser and navigate to [http://127.0.0.1:5000](http://127.0.0.1:5000) to use the application locally.
 
 ## Contributing
 
-Contributions to Download-It are welcome! If you encounter any issues or have suggestions for improvements, feel free to submit a pull request or open an issue on the GitHub repository.
+We welcome contributions to Download-It! If you encounter issues or have suggestions for improvement, please submit a pull request or open an issue on the GitHub repository.
 
 ## License
 
-Download-It is licensed under the MIT License. See the [LICENSE](https://github.com/Muneer320/Flask-Download-It/blob/main/LICENSE) file for more details.
+Download-It is licensed under the MIT License. For more information, see the [LICENSE](https://github.com/Muneer320/Flask-Download-It/blob/main/LICENSE) file.
 
 ---
 
-Download-It is a powerful tool for simplifying the video download process, providing users with a seamless experience and quick access to their favorite online content. Try it out today and enhance your video downloading experience!
-
----
-
-## Note Regarding Website Availability
-Please note that the website hosting Download-It on Heroku is currently unavailable due to a requirement for payment verification. As a teenager, I am unable to fulfill this verification process at the moment. However, if you wish to use Download-It, you can run it privately on your own computer.
-
-Thank you for your understanding and continued support.
-
----
+Download-It is an efficient tool for streamlining video downloads, offering users a smooth experience with rapid access to their preferred content. Give it a try and elevate your video downloading process!
